@@ -1,0 +1,16 @@
+[package]
+name = "web_api"
+version = "0.1.0"
+authors = ["Peter Newton <peter@4sightdesigns.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+iron = "*"
+router = "*"
+logger = "*"
+env_logger = "*"
+rustc-serialize = "*"
+chrono = { version = "*", features = ["rustc-serialize"]}
+uuid = { version = "*", features = ["v4", "rustc-serialize"]}
